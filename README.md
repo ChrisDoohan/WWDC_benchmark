@@ -1,3 +1,15 @@
+# Using This Repo to Benchmark The M1
+- Install Xcode 14.
+- `git clone git@github.com:ChrisDoohan/WWDC_benchmark.git && cd WWDC_benchmark`
+- see if xed is accessible or if it complains about xCode: `xed --version`
+- if the above didn't error out, you're good. If it did, run the following and relaunch your shell: `sudo xcode-select -s /Applications/Xcode.app/Contents/Developer`
+- `./bootstrap.sh` will do some stuff and then open xcode
+- At the top of the UI, there's a build target. Make sure this is set to `WWDC > My Mac`.
+- Hit `cmd + B`. Bulid should now work.
+- Hit `shift + cmd + K`.
+- Run the build again.
+- Read the build output. At the bottom, it should say "build succeeded" and give the date and duration of the build.
+
 # The unofficial WWDC app for macOS
 
 Enjoy WWDC from the comfort of your Mac with the unofficial WWDC app for macOS. Whether you're (virtually) attending or not, you can access livestreams, videos and sessions during the conference and as a year-round resource.
